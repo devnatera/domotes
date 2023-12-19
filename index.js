@@ -22,6 +22,8 @@ app.use(cors({
 }))
 
 router(app)
+const errorHandler = require('./app/http/middlewares/error.handle')
+app.use(errorHandler)
 
 app.listen(appConfig.port, () => {
     console.log(`api-marfil-reportes listening on port ${appConfig.port}!`)

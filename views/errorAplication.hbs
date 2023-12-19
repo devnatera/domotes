@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Domotes</title>
+    <title>Mensaje del sistema</title>
     <link rel="stylesheet" href="/css/style.css">
 </head>
 
@@ -13,10 +13,10 @@
     <div class="img-container">
         <div class="title-container">
             <div>
-                Autenticacion - Status: {{auth.status}}
+                Sistema: {{#if mensaje}} {{mensaje}} {{else}} Oops! se ha presentado un fallo {{/if}}
             </div>
         </div>
-        <img src="/images/undraw_at_work_re_qotl.svg">
+        <img src="/images/undraw_warning_re_eoyh.svg" alt="Error">
     </div>
 </body>
 
